@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+      let data = [0,1,2,4,5];
+      let newEle = 3;
+      let psotion =3;
+      for(let i= data.length-1; i>=0; i--){
+        if (i >= psotion) {
+            data[i+1] = data[i];
+            if (i == psotion) {
+                data[i] = newEle;
+                
+            }
+            
+        }
+
+      }
+      console.log(data)
+    let data1 = [2,4,7,8,1,0]
+    data1.splice(3,0,3)
+    console.log(data1) 
+
+    let string = ["Amir", "Ali", "Amin"];
+    let str = 0;
+    while (str<string.length) {
+       console.log(string[str]);
+       str++
+    }
+   
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

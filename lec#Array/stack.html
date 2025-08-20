@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stcak</title>
+    <script>
+        let data = [];
+        let currentSize = data.length;
+        let max =5;
+        function push(newValu) { 
+            if (max <= currentSize) {
+                // console.log("Stack full, can't add", newValu);
+                // pop();
+                return;
+            }
+            data[currentSize] = newValu;
+            currentSize++
+            
+        }
+
+        function pop(x) {
+            if (currentSize > 0) {
+                currentSize -= 1;
+                data.length = currentSize
+                
+            }else{
+                alert("empty")
+            }
+            
+        }
+        push(1);
+        push(10);
+        push(6);
+        push(7);
+        push(11);
+        push(88);
+        push(55);
+        push(77);
+        
+        console.log(data)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

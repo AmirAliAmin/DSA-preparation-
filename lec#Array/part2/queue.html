@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Queue in JS</title>
+    <script>
+        let item =[];
+        let currentSize = item.length;
+        let maxSize=5;
+        // function enqueue(newVal) {
+        //     if (currentSize>=maxSize) {
+        //         alert("Queue is Full");
+        //         // return;
+        //     }else{
+
+        //         item[currentSize] = newVal;
+        //         currentSize++
+        //     }
+            
+        // }
+         function enqueuewithInput() {
+            let newVal = document.getElementById("newVal").value;
+            if (currentSize>=maxSize) {
+                alert("Queue is Full");
+                document.getElementById("newVal").value="";
+                // return;
+            }else{
+
+                item[currentSize] = newVal;
+                currentSize++
+                document.getElementById("newVal").value="";
+            }
+            
+        }
+        function dequeue() {
+            if (!isEmpty()) {
+                for(let i=0; i<=item.length-1; i++){
+                    item[i] = item[i+1];
+                }
+                currentSize--;
+                item.length = currentSize;  
+            }else{
+                alert("Queue is empty")
+            }
+        }
+        function display() {
+            console.log(item)
+            
+        }
+        function front() {
+            if (! isEmpty()) {
+                console.log(item[0]) 
+            }else{
+                alert("Queue is empty")
+            }
+        }
+        function rear() {
+            if (! isEmpty()) {
+                console.log(item[currentSize-1])
+            }else{
+                alert("Queue is empty")
+            }
+            
+        }
+        function isEmpty() {
+            if (currentSize<=0) {
+                return true;
+            }else{
+                return false;
+            }
+            
+        }
+        // enqueue(20);
+        // display();
+        // enqueue(80);
+        // enqueue(90);
+        // enqueue(100);
+        // enqueue(110);
+        // enqueue(1)
+        // display();
+        // dequeue();
+        // display();
+        
+        // let arr =[];
+        // arr.push(80);
+        // arr.push(30);
+        // arr.push(50);
+        // console.log(arr)
+        // arr.shift();
+        // console.log(arr)
+
+        let arr = [6,10,8,9,11]
+        let arr1=[];
+        let num = 14;
+        for(let i=0; i<=arr.length-1; i++){
+            for(let j=0; j<=arr.length-1; j++){
+                if (arr[i]+arr[j] === num) {
+                  console.log(`at ${arr[i]}(${i}) and ${arr[j]}(${j}) = ${arr[i]+arr[j]}`)
+                    
+                }
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <input type="text" placeholder="Enter Value" id="newVal">
+    <button onclick="enqueuewithInput()">Add</button>
+    <button onclick="dequeue()">Remove</button>
+    <button onclick="display()">display</button>
+    <button onclick="front()">Get Front</button>
+    <button onclick="rear()">Get Last</button>
+    
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let data1 = [1,2,3,4,5];
+        let data2 = [6,7,8,9,10];
+        let data3 =[];
+        for(let i=0; i<=data1.length-1; i++){
+            data3[i] = data1[i];
+        }
+        for(let i =0; i<=data2.length-1; i++){
+            data3[data1.length+i]= data2[i];
+        }
+        console.log(data3);
+        let dummy = [2,3,4];
+        console.log(dummy.reverse())
+        let dummy1 = [4,5,5,6,7];
+        console.log([...dummy, ...dummy1])
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

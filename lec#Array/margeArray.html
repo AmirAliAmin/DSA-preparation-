@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marge Array</title>
+    <script>
+        let data = [10,20,44,55,68,38,77,80];
+        let data2 = [10,22,33,77,90,400,30];
+        let data3 = [];
+        for(let i=0; i<data.length; i++){
+            data3[i] = data[i];
+        }
+        for(let i=0; i<data2.length; i++){
+            data3[data.length+i] = data2[i]
+        }
+        console.log(data3)
+        let dummy =[10,20,30,40,50];
+        console.log(dummy.reverse());
+        let dummy2 =[60,70,80,90,100];
+        let dummy3 = [...dummy,...dummy2]
+        console.log(dummy3)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

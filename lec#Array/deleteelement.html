@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // let data = [10,0,3,4,5,27,55,67,89,3,55,9,100,34,69,76,99];
+        // let psotion = 4;
+        // for(let i = psotion; i<data.length-1; i++){
+        //     data[i]=data[i+1]
+        // }
+        // data.length = data.length-1
+        // console.log(data)
+        function getElement() {
+            let data = [10,0,3,4,5,27,55,67,89,3,55,9,100,34,69,76,99];
+        let psotion = document.getElementById("position").value;
+        psotion = parseInt(psotion)
+        for(let i = psotion; i<data.length-1; i++){
+            data[i]=data[i+1]
+        }
+        data.length = data.length-1
+        console.log(data)
+            
+        }
+
+        //for delete value js method is use that is splice
+        // console.log(data.splice(0,1));
+    </script>
+</head>
+<body>
+    <input type="text" id="position" placeholder="Enter position">
+    <!-- <input type="text" id="value" placeholder="Enter Value"> -->
+    <button onclick="getElement()">Submit</button>
+    
+</body>
+</html>

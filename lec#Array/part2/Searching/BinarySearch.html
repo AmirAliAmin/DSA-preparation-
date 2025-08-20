@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary Search with iterative</title>
+    <script>
+        let data = [10,3,4,2,11,25,27,8,50,33];
+        for(let i =0; i<=data.length-1; i++){
+            for(let j=0; j<=data.length-1; j++){
+                if (data[j]>data[j+1]) {
+                    let temp = data[j];
+                    data[j] = data[j+1];
+                    data[j+1] = temp;
+                }
+            }
+        }
+        console.log(data)
+        let find= 27;
+        let start =0;
+        let end = data.length-1;
+        let position = undefined;
+        while(start <= end){
+            let mid = Math.floor((start+end)/2);
+            if (data[mid] === find) {
+                position = mid;
+                break;
+            }else if(data[mid]< find){
+                start = mid+1;
+                // console.log(mid)
+            }else{
+                end = mid -1
+            }
+            // break;
+        }
+        console.log(position)
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

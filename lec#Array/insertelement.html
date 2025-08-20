@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert Array</title>
+    <script>
+        // let element = [10,20,40,67,88,90,20];
+        // const newEl = 80;
+        // const position = 3;
+        // for(let i = element.length-1; i>=0; i--){
+        //     // console.log(element[i])
+        //     if (i>= position) {
+        //         element[i+1]=element[i];
+        //         if (i === position) {
+        //             element[i]=newEl;
+                    
+        //         }
+        //     }
+        // }
+        // console.log(element)
+
+        function getElement() {
+            let element = [10,20,40,67,88,90,20];
+            let newEl = document.getElementById("value").value;
+            newEl = parseInt(newEl)
+            let position = document.getElementById("position").value;
+            position = parseInt(position)
+            for (let i = element.length-1; i >= 0; i--) {
+                if (i >= position ) {
+                    element[i+1] = element[i];
+                    if(i === position)
+                    element[i]= newEl;
+                }
+            }
+            console.log(element)
+        }
+          let element = [10,20,40,67,88,90,20];
+        //   element.splice("position", "how many item delete from the psotion", "with value add")
+        element.splice(2,0,600)
+        console.log(element)
+    </script>
+</head>
+<body>
+    <input type="text" id="position" placeholder="Enter position">
+    <input type="text" id="value" placeholder="Enter Value">
+    <button onclick="getElement()">Submit</button>
+
+    <!-- You can also this thing by using splice -->
+    
+</body>
+</html>
