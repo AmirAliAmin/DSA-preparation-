@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anagram of String</title>
+    <script>
+        function anagramStr(str1, str2) {
+            let obj1 ={}
+            if (str1.length !==  str2.length) {
+                return false
+                
+            }
+          
+            for (chr of str1) {
+                // console.log(chr)
+                obj1[chr] = (obj1[chr] || 0) +1; 
+            }
+            console.log(obj1)
+            for(chr of str2){
+                // console.log(obj1[chr])
+                if (!obj1[chr]) {
+                    return false
+                }
+                obj1[chr]--
+            }
+            return true;
+        }
+        console.log(anagramStr("act", "cat"))
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

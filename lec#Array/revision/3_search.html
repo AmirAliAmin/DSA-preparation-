@@ -5,15 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script>
+      // let data = [1, 2, 3, 4, 52, 2, 3, 44, 55, 7, 8, 99, 22, 343, 200];
+      // let item = 44;
+      // let index = undefined;
+      // for(let i=0; i<=data.length-1; i++){
+      //   if (data[i] === item) {
+      //       index = i; 
+      //   }
+      // }
+      // console.log(index)
+
       let data = [1, 2, 3, 4, 52, 2, 3, 44, 55, 7, 8, 99, 22, 343, 200];
-      let item = 44;
-      let index = undefined;
+      let item = 55;
+      let position = undefined;
       for(let i=0; i<=data.length-1; i++){
         if (data[i] === item) {
-            index = i; 
+          position = i;
         }
       }
-      console.log(index)
+      console.log(position)
+      console.log(data.indexOf(200)) 
+
     </script>
   </head>
   <body></body>

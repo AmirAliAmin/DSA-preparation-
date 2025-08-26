@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //similar to the object but {name => Amir} ,and in object the key is always string
+        //but i map we use any data type(boolen, number)
+        //its not a js map function
+        let data = new Map([
+            ["name", "Amir"],
+            [true, "bol Key"],
+            [100, "roll number"]
+        ]);
+        data.set("color", "Purple")
+        console.log(data.size )
+        console.log(data.has("name"))
+        console.log(data.get(true))
+        data.delete("name")
+        // data.clear();
+        console.log(data)
+
+        //we also apply loop(for and for of, for each)
+        // for (const element of data) {
+        //     console.log(element)
+        //     console.log(element[0])//keys
+        //     console.log(element[1])//value
+            
+        // }
+        data.forEach((val,key) => {
+            // console.log(val)
+            console.log(key)
+        });
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

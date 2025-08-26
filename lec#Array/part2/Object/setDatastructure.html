@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set</title>
+    <script>
+        //set data structure is almost same as array but it remove dupilcate
+        let data = new Set(["Amir", "Ali", "Amir"])
+        // let item =["Amir", "Ali", "Amir"]
+        data.add("Amin");
+        data.add("Amir")//it's not add because it duplicate
+        // data.add({email:"aliaminamir77@gmail.com"})
+        // console.log(data.has("Ali"))
+        
+        // data.clear();
+        console.log(data);
+        // console.log(item)
+
+        //loop
+        for (const element of data) {
+            console.log(element)
+            // console.log(data)
+            
+        }
+        data.forEach((val) => {
+            console.log(val)
+            
+        });
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

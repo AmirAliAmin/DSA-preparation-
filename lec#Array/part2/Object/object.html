@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // loop of array is forof and loop for object is forin
+
+        let data ={
+            name:"Amir",
+            age:22,
+            gmail:"aliaminamir77@gmail.com",
+            getName: function(){
+               return this.name;
+            }
+        }
+        data.contact = 12344;
+        // delete data.name;
+        data.name = "Ali"
+        console.log(data)
+        // console.log(data.getName())
+        for (const key in data) {
+            // if (Object.prototype.hasOwnProperty.call(object, key)) {
+            //     const element = object[key];
+                
+            // }
+            console.log(key);
+            // console.log(data[key])
+        }
+        console.log(Object.values(data))
+        console.log(Object.keys(data))
+        console.log(Object.entries(data))
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

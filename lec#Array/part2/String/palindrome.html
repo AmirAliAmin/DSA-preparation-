@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome String</title>
+    <script>
+        let str = "carrac1"
+        let start =0;
+        let end = str.length-1;
+        while (start<end) {
+            if (str[start] !== str[end]) {
+                console.log("Not palindrome")
+                break;  
+            }else{
+                console.log("Palindrome")
+            }
+
+            start++;
+            end--
+        }
+
+        function palindromeStr(data) {
+            let start =0;
+            let end = data.length-1;
+            let result = true;
+            while (start<end) {
+                if (data[start] !== data[end]) {
+                    result = false
+                    
+                }
+                start++
+                end--
+                
+            }
+            return result;
+        }
+        console.log(palindromeStr("aba"))
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

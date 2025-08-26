@@ -5,37 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
+        // let data1 =[0,2,4,6,8,10,90,112];
+        // let data2 = [1,3,5,7,9];
+        // let data3 =[];
+        // let d1=0;
+        // let d2 =0;
+        // let d3 = 0;
+        // while (d1<data1.length && d2<data2.length) {
+        //     if (data1[d1]<data2[d2]) {
+        //         data3[d3] = data1[d1]
+        //         d1++
+        //     }else{
+        //         data3[d3]= data2[d2]
+        //         d2++
+        //     }
+        //     d3++
+        // }
+        // if (data1.length > data2.length) {
+        //     while (d1<data1.length) {
+        //         data3[d3] = data1[d1]
+        //         d1++
+        //         d3++
+        //     }
+            
+        // } else {
+        //     while (d2<data2.length) {
+        //         data3[d3] =  data2[d2]
+        //         d2++
+        //         d3++
+                
+        //     }
+            
+        // }
+        // console.log(data3)
+
         let data1 =[0,2,4,6,8,10,90,112];
-        let data2 = [1,3,5,7,9];
+        let data2 = [1,3,5,7,9,20,50,220,300];
         let data3 =[];
-        let d1=0;
+        let d1 =0;
         let d2 =0;
-        let d3 = 0;
+        let d3 =0;
         while (d1<data1.length && d2<data2.length) {
             if (data1[d1]<data2[d2]) {
                 data3[d3] = data1[d1]
                 d1++
             }else{
-                data3[d3]= data2[d2]
+                data3[d3] = data2[d2]
                 d2++
             }
             d3++
+            
         }
         if (data1.length > data2.length) {
+            
             while (d1<data1.length) {
                 data3[d3] = data1[d1]
                 d1++
-                d3++
+                d3++ 
             }
-            
-        } else {
-            while (d2<data2.length) {
-                data3[d3] =  data2[d2]
+        }else{
+            while(d2<data2.length){
+                data3[d3] = data2[d2]
                 d2++
                 d3++
-                
             }
-            
+
         }
         console.log(data3)
     </script>

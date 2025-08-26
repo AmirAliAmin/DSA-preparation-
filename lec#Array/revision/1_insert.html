@@ -5,32 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-      let data = [0,1,2,4,5];
-      let newEle = 3;
-      let psotion =3;
-      for(let i= data.length-1; i>=0; i--){
-        if (i >= psotion) {
-            data[i+1] = data[i];
-            if (i == psotion) {
-                data[i] = newEle;
+    //   let data = [0,1,2,4,5];
+    //   let newEle = 3;
+    //   let psotion =3;
+    //   for(let i= data.length-1; i>=0; i--){
+    //     if (i >= psotion) {
+    //         data[i+1] = data[i];
+    //         if (i == psotion) {
+    //             data[i] = newEle;
                 
-            }
+    //         }
             
+    //     }
+
+    //   }
+    //   console.log(data)
+    // let data1 = [2,4,7,8,1,0]
+    // data1.splice(3,0,3)
+    // console.log(data1) 
+
+    let data = [1,2,3,4,5,6];
+    let newVal = 7;
+    let psotion = 4;
+    for(let i = data.length-1; i>=0; i--){
+      if (i >= psotion) {
+        data[i+1] = data[i];
+        if (i === psotion) {
+          data[i] = newVal;
+          
         }
-
+        
       }
-      console.log(data)
-    let data1 = [2,4,7,8,1,0]
-    data1.splice(3,0,3)
-    console.log(data1) 
-
+    }
+    console.log(data)
     let string = ["Amir", "Ali", "Amin"];
     let str = 0;
     while (str<string.length) {
        console.log(string[str]);
        str++
     }
-   
+    let item =  [1,2,3,4,5,6,8];
+    item.splice(0,0,6)
+    console.log(item)
     </script>
 </head>
 <body>

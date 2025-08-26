@@ -5,16 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
+        // let data = [2,3,4,5,6,7,8,9,13,33,44];
+        // let position = 6;
+        // for(let i = position; i <=data.length-1; i++){
+        //     data[i]= data[i+1];
+        // }
+        // data.length = data.length-1;
+        // console.log(data)
+        // let data1 =[2,3,4,7,5,6];
+        // data1.splice(1,1)
+        // console.log(data1)
+
         let data = [2,3,4,5,6,7,8,9,13,33,44];
-        let position = 6;
-        for(let i = position; i <=data.length-1; i++){
-            data[i]= data[i+1];
+        let position = 1;
+        for(let i=position; i<=data.length-1; i++){
+            data[i] = data[i+1]
         }
-        data.length = data.length-1;
+        data.length = data.length-1
         console.log(data)
-        let data1 =[2,3,4,7,5,6];
-        data1.splice(1,1)
-        console.log(data1)
+
+        let item = [2,3,5,6,7];
+        item.splice(0,1)
+        console.log(item)
+
     </script>
 </head>
 <body>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>recuraion</title>
+  <script>
+      let money = 100;
+      let totalApple = 0;
+      function totalMoney(money) {
+        if (money>0) {
+            console.log("i have total money", money, "and i have total Apple", totalApple)
+            buyApple(money)
+        }else{
+            console.log("i have no money")
+        }
+      }
+      function buyApple(x) {
+        totalApple++
+        totalMoney(x-10)
+        
+      }
+      totalMoney(money)
+
+  </script>
+    
+</head>
+<body>
+    
+</body>
+</html>

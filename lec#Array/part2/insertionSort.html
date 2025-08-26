@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insertion Sort</title>
+    <script>
+        let item = [12,11,13,5,6];
+        let i, current, j;
+        for(i=1; i<item.length; i++){
+            // console.log(item[i]);
+            current = item[i];
+            j = i-1;
+            while (j>=0 && item[j]>current) {
+                item[j+1] = item[j]
+                j=j-1  
+            }
+            item[j+1] = current;
+        }
+        console.log(item)
+
+        let nums = [1,20,3,10,7,16,22,5] //7,16;
+        nums1 = nums.splice(4,2);
+        console.log(nums)
+        let val, temp, val2;
+        for(let val=1; val<nums.length; val++){
+            temp = nums[val];
+            val2 = val - 1;
+            while(val2>=0 && nums[val2]>current){
+                nums[val2 + 1] = nums[val2];
+                val2 = val2-1
+            }
+            nums[val2+1] = temp
+        }
+        console.log([...nums, ...nums1])
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

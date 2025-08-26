@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link List</title>
+    <script>
+        class List{
+            constructor(data){
+
+                this.head = {
+                    val: data,
+                    next: null,
+                };
+                this.tail = this.head
+                this.size = 1;
+                // this.tail.val ="300"
+                //if we change at tail the thing are change at head 
+            }
+            addNode(nodeData){
+                let newNode ={
+                    val: nodeData,
+                    next: null,
+                }
+                this.tail.next = newNode;
+                this.tail = newNode;
+                this.size++
+
+            }
+            // addNode2(nodeData){
+            //     let newNode1 ={
+            //         val: nodeData,
+            //         next: null,
+            //     }
+            //     this.tail.next = newNode1;
+
+            // }
+
+        }
+        let list = new List(200);
+        list.addNode(300)
+        list.addNode(400)
+        list.addNode(500)
+        console.log(list)
+
+        //in object its work on memory
+        //i with "y" has the refernce(memory) of "x" so if change in "y" that thing change in "x"
+        //at memory
+        // let x = {name:"Amir"};
+        // let y =x;
+        // y.name= "Ali";
+        // console.log(x);
+        // console.log(y)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

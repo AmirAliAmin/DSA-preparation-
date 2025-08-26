@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Even number</title>
+    <script>
+        let data = [10,2,1,5,8,6,15,13,12,0,17,18];
+        let evenArray = []
+        let counter = 0;
+        // for(let i=0; i<data.length; i++){
+        //     if ((data[i]%2) === 0) {
+        //     //   console.log(data);
+        //       evenArray.push(data[i])
+        //     }
+        // }
+        // console.log(evenArray);
+        // for(let i= 0; i<evenArray.length; i++){ 
+        //     evenArray[i] =2*evenArray[i]
+        // }
+        // console.log(evenArray)
+        // let counter = 0;
+        // for(let i= 0; i<evenArray.length; i++){ 
+        //     counter ++
+        // }
+        // console.log(counter)
+        let n =4;
+        if (n%2 === 0) {
+            console.log("Even")
+        }
+        else{
+            console.log("odd")
+        }
+        //better solution
+        for(let i=0; i<data.length; i++){
+            if (data[i]%2 == 0) {
+              counter++
+              evenArray.push(data[i]*2)
+            }
+        }
+        console.log(evenArray)
+        console.log(counter)
+
+    </script>
+</head>
+<body>
+</body>
+</html>
